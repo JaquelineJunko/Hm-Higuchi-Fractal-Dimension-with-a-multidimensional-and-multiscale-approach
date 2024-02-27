@@ -1,4 +1,4 @@
-# Hm: Higuchi Multiscale and Multidimensional Fractal Dimension
+# Hm: Higuchi Fractal Dimension with a multidimensional and multiscale approach
 Multidimensional and Multiscale Higuchi dimension for the analysis of histological images
 
 Paper: https://ieeexplore.ieee.org/abstract/document/9313575
