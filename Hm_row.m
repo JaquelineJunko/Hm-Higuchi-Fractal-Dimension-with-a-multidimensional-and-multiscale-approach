@@ -74,7 +74,11 @@ function [ HD_line ] = Hm_row( data1D, Lmax, kmax)
         end
 
         % calculate the Higuchi Dimension of each box vector lenght, based on the new series created
-        if (length(newSerie) > 1)
+        if (length(newSerie) > 2*kmax)
+            HD_partial(1,k) = Higuchi_FD(newSerie, kmax);
+            total_created_series = total_created_series + 1;    % number of new auxiliary series created
+        else
+            newSerie = max(serie, [], 3);
             HD_partial(1,k) = Higuchi_FD(newSerie, kmax);
             total_created_series = total_created_series + 1;    % number of new auxiliary series created
         end
